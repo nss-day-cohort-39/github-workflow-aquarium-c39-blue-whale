@@ -55,6 +55,7 @@ const initializeDetailButtonEvents = () => {
         "click",
         theClickEvent => {
             const theDialog = document.querySelector("#details--ralph")
+            theDialog.showModal()
         }
     )
     

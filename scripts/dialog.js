@@ -49,6 +49,15 @@ const initializeDetailButtonEvents = () => {
             theDialog.showModal()
         }
     )
+
+    // Show Ralph's details when the button is clicked
+    document.querySelector("#button--ralph").addEventListener(
+        "click",
+        theClickEvent => {
+            const theDialog = document.querySelector("#details--ralph")
+            theDialog.showModal()
+        }
+    )
 }
 
 export default initializeDetailButtonEvents

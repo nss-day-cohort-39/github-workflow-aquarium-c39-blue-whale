@@ -49,6 +49,15 @@ const initializeDetailButtonEvents = () => {
             theDialog.showModal()
         }
     )
+    // THIS IS TIMS fish francois
+    // Show Francois details when the button is clicked
+    document.querySelector("#button--blueGill").addEventListener(
+        "click",
+        theClickEvent => {
+            const theDialog = document.querySelector("#details--blueGill")
+            theDialog.showModal()
+        }
+    )
 }
 
 export default initializeDetailButtonEvents

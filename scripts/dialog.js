@@ -4,9 +4,9 @@ const initializeDetailButtonEvents = () => {
 
     for (const btn of allCloseButtons) {
         btn.addEventListener("click", theEvent => {
-                const dialogElement = theEvent.target.parentNode
-                dialogElement.close()
-            }
+            const dialogElement = theEvent.target.parentNode
+            dialogElement.close()
+        }
         )
     }
     // CAN'T TOUCH THIS - END
@@ -46,6 +46,14 @@ const initializeDetailButtonEvents = () => {
         "click",
         theClickEvent => {
             const theDialog = document.querySelector("#details--dory")
+            theDialog.showModal()
+        }
+    )
+    // Mark's fish details 
+    document.querySelector("#button--eddie").addEventListener(
+        "click",
+        theClickEvent => {
+            const theDialog = document.querySelector("#details--eddie")
             theDialog.showModal()
         }
     )

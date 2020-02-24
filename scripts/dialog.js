@@ -57,6 +57,33 @@ const initializeDetailButtonEvents = () => {
             theDialog.showModal()
         }
     )
+
+    // Show Ralph's details when the button is clicked
+    document.querySelector("#button--ralph").addEventListener(
+        "click",
+        theClickEvent => {
+            const theDialog = document.querySelector("#details--ralph")
+            theDialog.showModal()
+        }
+    )
+
+    // THIS IS TIMS fish francois
+    // Show Francois details when the button is clicked
+    document.querySelector("#button--blueGill").addEventListener(
+        "click",
+        theClickEvent => {
+            const theDialog = document.querySelector("#details--blueGill")
+            theDialog.showModal()
+        }
+    )
+    // Show Sammy's details when the button is clicked - JD
+    document.querySelector("#button--sammy").addEventListener(
+        "click",
+        theClickEvent => {
+            const theDialog = document.querySelector("#details--sammy")
+            theDialog.showModal()
+        }
+    )
 }
 
 export default initializeDetailButtonEvents
